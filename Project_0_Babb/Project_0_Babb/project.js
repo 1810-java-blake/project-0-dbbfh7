@@ -282,7 +282,7 @@ function fight(player1, player2)
                 dmg = (((Math.floor(Math.random() * 7)+1))+(player2.strMod));
                 player1.hp=player1.hp-dmg;
                 player2.message=`Player 2 swings his mighty sword doing ${dmg} points of damage to player 1! <br>
-                Player 1 has ${player2.hp} health left!`;
+                Player 1 has ${player1.hp} health left!`;
                 //Fight message "Player 2 has taken damage"
             }
             else if (player2.build=='Ranger')
@@ -296,8 +296,8 @@ function fight(player1, player2)
                 if (player1.hp<=0)
                 {
                     player1.isAlive = false;
-                    player2.message = (player2.message+
-                    `Player 1 has been killed! Player 2 is victorious!`);
+                    player1.message = ` `;
+                    player2.message =`GAME OVER. PLAYER 2 WINS.`;
                 }
             }
             else
