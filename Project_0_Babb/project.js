@@ -229,7 +229,7 @@ function fight(player1, player2)
             {
                 dmg = ((3*(Math.floor(Math.random() *3)+1))+(2*(player1.strMod)));
                 player2.hp=player2.hp-dmg;
-                player1.message=`Player 1 swings his mighty sword doing ${dmg} points of damage to player 2! <br>
+                player1.message=`Player 1 swings his awesome hammer doing ${dmg} points of damage to player 2! <br>
                 Player 2 has ${player2.hp} health left!`;
             }
             else if (player1.build=='Paladin')
@@ -273,7 +273,7 @@ function fight(player1, player2)
             {
                 dmg = ((3*(Math.floor(Math.random() *3)+1))+(2*(player2.strMod)));
                 player1.hp=player1.hp-dmg;
-                player2.message=`Player 2 swings his mighty hammer doing ${dmg} points of damage to player 1! <br>
+                player2.message=`Player 2 swings his awesome hammer doing ${dmg} points of damage to player 1! <br>
                 Player 1 has ${player1.hp} health left!`;
                 //Fight message is "player 2 takes damage"
             }
@@ -281,8 +281,8 @@ function fight(player1, player2)
             {
                 dmg = (((Math.floor(Math.random() * 7)+1))+(player2.strMod));
                 player1.hp=player1.hp-dmg;
-                player2.message=`Player 2 swings his mighty sword doing ${dmg} points of damage to player 2! <br>
-                Player 2 has ${player2.hp} health left!`;
+                player2.message=`Player 2 swings his mighty sword doing ${dmg} points of damage to player 1! <br>
+                Player 1 has ${player2.hp} health left!`;
                 //Fight message "Player 2 has taken damage"
             }
             else
