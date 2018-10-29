@@ -240,11 +240,11 @@ function fight(player1, player2)
                 player1.message=`Player 1 swings his mighty sword doing ${dmg} points of damage to player 2! <br>
                 Player 2 has ${player2.hp} health left!`;
             }
-            else
+            else if (player1.build=='Ranger')
             {
                 dmg = (2*((Math.floor(Math.random() * 5)+1)) +(player1.strMod));
                 player2.hp=player2.hp-dmg;
-                player1.message=`Player 1 swings his mighty sword doing ${dmg} points of damage to player 2! <br>
+                player1.message=`Player 1 swipes with both blades doing ${dmg} points of damage to player 2! <br>
                 Player 2 has ${player2.hp} health left!`;
                 //fight message "Player 2 has taken damage."
             }
@@ -282,10 +282,10 @@ function fight(player1, player2)
                 dmg = (((Math.floor(Math.random() * 7)+1))+(player2.strMod));
                 player1.hp=player1.hp-dmg;
                 player2.message=`Player 2 swings his mighty sword doing ${dmg} points of damage to player 1! <br>
-                Player 1 has ${player2.hp} health left!`;
+                Player 1 has ${player1.hp} health left!`;
                 //Fight message "Player 2 has taken damage"
             }
-            else
+            else if (player2.build=='Ranger')
             {
                 dmg = (2*((Math.floor(Math.random() * 5)+1)) +(player2.strMod));
                 player1.hp=player1.hp-dmg;
@@ -297,7 +297,7 @@ function fight(player1, player2)
                 {
                     player1.isAlive = false;
                     player2.message = (player2.message+
-                    `Player 1 has been killed! Player 2 is victorious!`);
+                    ` Player 1 has been killed! Player 2 is victorious!`);
                 }
             }
             else
@@ -309,9 +309,16 @@ function fight(player1, player2)
             ${player2.message}`;
         }
         else
-        {
-            document.getElementById("demo").innerHTML=
-            `GAME OVER`;
-        }
+            if(player1.isAlive==true)
+            {
+                document.getElementById("demo").innerHTML=
+                `GAME OVER. PLAYER 1 WINS`;
+            }  
+            else
+            if(player2.isAlive==true)
+            {
+                document.getElementById("demo").innerHTML=
+                `GAME OVER. PLAYER 2 WINS`;
+            } 
     }
 }
