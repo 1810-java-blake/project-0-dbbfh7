@@ -297,7 +297,7 @@ function fight(player1, player2)
                 {
                     player1.isAlive = false;
                     player2.message = (player2.message+
-                    ` Player 1 has been killed! Player 2 is victorious!`);
+                    ` GAME OVER. PLAYER 2 WINS.`);
                 }
             }
             else
