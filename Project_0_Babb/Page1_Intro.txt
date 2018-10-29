@@ -1,0 +1,35 @@
+<!--Page 1:-->
+
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<h1>LEGENDS OF ARTHERIAN</h1>
+
+<p> <div.class="div.intro">Welcome to the fields of Artherian, brave adventurers! It is here that we turn men into warriors, and warriors into legends! But before that begins, it must be asked, what sort of man are you? Can you survive the trial by combat against your fellow champion, and truly ascend to the rank of Legend? Let battle be joined, let the fight commence!</div></p>
+<button type="button1">Continue</button>
+
+<p class="intro">Though many heroes walk through the Artherian fields, there are three guilds that have been chosen today. The noble Paladins of the Radiant order - defended by powerful shields and protected by the gods with powerful healing magics. The Society of Fighter, those who have trained with the sword since birth, using both their hands for a weapon to bring mightily upon their enemies. Last but not least, the Rangers of the Wood, moving swiftly through the battlefield with two swords, cutting through their enemies in a whirlwind of steel!
+<ul>
+	<li>Fighter: Speed:* Damage:*** Armor:**. Special Ability: Two Handed Weapons.</li>
+	<li>Paladin: Speed:* Damage:** Armor:***. Special Ability: Divine Grace. Possibility every turn to heal 4d8 points of health, can use shields.</li>
+	<li>Ranger: Speed:*** Damage:** Armor:*. Special ability: Dual Wielding</li>
+</ul></p>
+<button type="button2">Continue</button>
+
+<p><div1>
+Race Options:
+<ul>
+	<li>Humans: No benefits or penalties.</li>
+	<li>Elves: Frail, yet swift.</li>
+	<li>Orcs: Strong, yet slow.</li>
+	<li>Dwarves: Hardy, yet slow.</li>
+</ul>
+</div>
+</p>
+<button type="button"> <a href="Page2_Intro.txt">Onwards!</a></button>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<!-- This page will cover character generation, and will attach itself to the Javascript file. Once that is done, it will link itself to page three, and combat will be joined -->
